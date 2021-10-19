@@ -1,8 +1,6 @@
 import requests
 
 print("==================== GET THE PUBLIC IP ADDRESS OF THE DEVICE ====================")
-ip = requests.get("https://api.ipify.org").content.decode("utf8")
-
 api_url = "https://ipapi.co/json"
 response = requests.get(api_url)
 api_response = response.json()
